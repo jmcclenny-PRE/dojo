@@ -1,6 +1,5 @@
 VPN_AUTH_GROUP=###CHANGEME###
 VPN_AUTH_CONNECT=###CHANGEME###
-ADMIN911_PW=###CHANGEME###
 
 # install homebrew #
 /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
@@ -13,6 +12,7 @@ brew install cloudfoundry/tap/bosh-cli
 brew install cloudfoundry/tap/cf-cli
 brew install homebrew/cask/powershell
 brew cask install iterm2
+brew install homebrew/cask-versions/slack-beta
 brew install zsh
 brew install mas
 mas install 715768417 803453959
@@ -57,7 +57,7 @@ cd /Applications
 unzip ~/Downloads/VSCode-darwin-stable.zip
 
 ##### Create VPN connect script #####
-cd ~/workspace
+cd ~/
 echo "sudo openconnect --authgroup $VPN_AUTH_GROUP --script=~/vpnc-script-split-traffic.sh   $VPN_AUTH_CONNECT  --servercert sha256:cca84f3585f647d4507276d3b714fb3868ed1bd27e33b6535652fd915818d34c" > connect-ceif.sh
 chmod +x connect-ceif.sh
 
@@ -88,9 +88,6 @@ add_ip 192.168.0.0 255.255.0.0 16		#Platform
 
 # End of script' > vpnc-script-split-traffic.sh
 chmod +x vpnc-script-split-traffic.sh
-
-# Move epoc directory into the workspace
-mv ~/epoc ~/workspace/
 
 # install oh-my-zsh (drops you into zsh and you must exit)
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
