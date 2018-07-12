@@ -2,7 +2,7 @@ VPN_AUTH_GROUP=###CHANGEME###
 VPN_AUTH_CONNECT=###CHANGEME###
 
 ##### Create VPN connect script #####
-cd ~/workspace
+cd ~/
 echo "sudo openconnect --authgroup $VPN_AUTH_GROUP --script=~/vpnc-script-split-traffic.sh   $VPN_AUTH_CONNECT  --servercert sha256:cca84f3585f647d4507276d3b714fb3868ed1bd27e33b6535652fd915818d34c" > connect-ceif.sh
 chmod +x connect-ceif.sh
 
