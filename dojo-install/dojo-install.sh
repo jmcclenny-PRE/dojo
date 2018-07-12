@@ -11,11 +11,10 @@ brew install cloudfoundry/tap/credhub-cli
 brew install cloudfoundry/tap/bosh-cli
 brew install cloudfoundry/tap/cf-cli
 brew install homebrew/cask/powershell
-brew cask install iterm2
 brew install homebrew/cask-versions/slack-beta
+brew cask install microsoft-remote-desktop-beta
+brew cask install iterm2
 brew install zsh
-brew install mas
-mas install 715768417 803453959
 gem install cf-uaac
 
 # install zoom #
