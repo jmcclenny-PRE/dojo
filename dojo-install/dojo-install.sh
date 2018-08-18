@@ -1,3 +1,5 @@
+#! /bin/bash
+
 VPN_AUTH_GROUP=###CHANGEME###
 VPN_AUTH_CONNECT=###CHANGEME###
 
